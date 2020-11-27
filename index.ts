@@ -10,6 +10,8 @@ declare module 'fastify' {
   }
 }
 
+export { TypeABC } from './TypeABC' // making this type visible to the plugin
+
 const server = fastify()
 
 server.register(tsplugin, { optionA: 'optionA value' }) // all good here
